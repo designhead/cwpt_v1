@@ -1,0 +1,127 @@
+/*
+Plugin Woocommerce Forms & Fields
+Support & documentation: http://www.gravityhelp.com/support/
+*/
+
+.gform_wrapper {
+
+	.gform_heading {
+		
+		h3 {}
+		
+		.gform_description {}
+	}
+
+	.validation_error {
+		margin-bottom: 20px;
+		padding: 10px;
+		border: solid;
+		border-style: solid;
+		border-width: 1px;
+		border-color: red;
+		border-radius: 3px;
+		color: red;
+	}
+	
+	.gform_body {
+		
+		ul.gform_fields {
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		
+			&.top_label {}
+			&.description_above {}
+			&.description_below {}
+			
+			li {
+				margin: 0px;
+				margin-bottom: 15px;
+				padding: 0px;
+				
+				&.gfield {
+					
+					&.gfield_contains_required {}
+					
+					label {
+						
+						.gfield_required {
+							margin-left: 3px;
+							color: red;
+						}
+					}
+					
+					.ginput_complex {
+						
+						.ginput_left {
+							font-size: 80%;
+						}
+						
+						.ginput_right {
+							font-size: 80%;
+						}
+					}
+					
+					.ginput_container {
+						
+						input, textarea {
+							width: 100%;
+							
+							&:last-child {
+							}
+						}
+						
+						textarea {}
+						
+						ul.gfield_checkbox,
+						ul.gfield_radio {
+							
+							li {
+								
+								&:before {}
+								
+								input {}
+								
+								label {}
+							}
+						}
+					}
+					
+					.validation_message {
+						display: inline-block;
+						margin-top: 5px;
+						font-size: 80%;
+						color: red;
+					}
+					
+					.clear-multi {
+						
+						.ginput_container {
+							
+							&:last-child {}
+							
+							label {}
+						}
+					}
+				}
+				
+				&.gsection {
+					
+					&:first-child {}
+					
+					h2 {}
+					
+					.gsection_description {}
+				}
+				
+				label {}
+			}
+		}
+	}
+	
+	.gform_footer {
+		
+		input.button {}
+	}	
+}
+
