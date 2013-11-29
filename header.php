@@ -1,18 +1,25 @@
 <?php ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<head profile="http://gmpg.org/xfn/11">
-	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html <?php language_attributes(); ?>>
+<!--<![endif]-->
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/1417b21e-36f3-4fad-b563-1a2138245b89.css"/>
-	<title>
-		<?php wp_title('&laquo;', true, 'right'); ?>
-		<?php bloginfo('name'); ?>
-	</title>
-	
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<!--[if lt IE 9]>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+	<![endif]-->
 	<?php wp_head(); ?>
+	<link type="text/css" rel="stylesheet" href="http://fast.fonts.net/cssapi/1417b21e-36f3-4fad-b563-1a2138245b89.css"/>
 </head>
 
 <body <?php body_class(); ?>>

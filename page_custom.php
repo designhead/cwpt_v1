@@ -4,6 +4,12 @@ Template Name: Custom
 */
 ?>
 
-<?php get_header(); ?>
+<?php
+/*
+ *
+ * @package cwpt
+ */
+
+get_header(); ?>
 
 <?php get_footer(); ?>

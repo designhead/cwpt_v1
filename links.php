@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+/*
+ *
+ * @package cwpt
+ */
+
+get_header(); ?>
 
 <h2>Links:</h2>
 <ul>

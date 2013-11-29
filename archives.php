@@ -1,4 +1,11 @@
-<?php get_header(); ?>
+<?php 
+/*
+ *
+ * @package cwpt
+ */
+ 
+get_header(); ?>
+
 <?php get_search_form(); ?>
 
 <h2>Archives by Month:</h2>

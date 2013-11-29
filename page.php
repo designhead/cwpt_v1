@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+ *
+ * @package cwpt
+ */
+get_header(); ?>
 
 <div id="body">
 	<div class="wrapper">
